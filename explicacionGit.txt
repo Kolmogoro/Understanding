@@ -1,0 +1,110 @@
+
+git init
+Crear un repositorio local
+
+git add
+añade al area de trabajo, los archivos
+
+git commit
+sube lo que hay en el area de trabajo al repositorio local
+
+git commit --amend 
+una vez echo commit, luego puedes haber hecho cambios que hubieras querido poner en el ultimo commit. Esto comando te permite agregar eso cambios al ultimo commit. 
+("echo" viene de echar, "hecho" viene de hacer).
+
+git diff
+Deja ver la diferencias que existen entre los archivos de tu area de trabajo y los de la carpeta.
+
+git diff hashCode1 hashCode2 
+Muestra la diferencia entre commits. A todo esto, los commits se pueden identificar mediante su codigo hash, este forma una arbol de sucesiones de nodos donde cada nodo es un cambio, y por ende tambien podemos tener ramas que nos definen dos caminos diferentes para la implementacion, y podemos unir esta ramas para obtener un unico resultado... un lio de ramas.
+
+git diff HEAD~i HEAD 
+Nos muestra la diferencia entre commits arbitrarios, donde i varian entre 1 y la cantidad de commits totales.
+
+git checkout -- archivo
+Descarta las ultimas modificaciones hechas, las retorna a las del area de trabajo.
+
+git reset HEAD archivo
+Descarta la ultima adicion de un archivoc al area de trabajo. Osea deshace el ultimo cambio de un archivo del area de trabajo.
+
+git log 
+enlista ordenadamente en pantalla todos los commit hechos. 
+
+git log --oneline | cat
+muestra los commits con su descripcion
+
+git reset --[comando]  HashCode
+Segun que comando utliza, elimina ultimo commit y modifica o no el area de trabajo. Leer la guia de comandos para mas detalle. El suiente comando da un ejemplo.
+
+git reset --hard HEAD~ï 
+Retorna al HEAD~i commmits, eliminando los de arriba.
+
+git log --oneline --decorate
+Muestra los commits diferenciando el ultimo
+
+git revert  hashCode
+Revierte el cambio, pero como un commit, osea deahace el cambio y le vuelve aplicar commit... y por ende la longitud de la rama crece en uno. El siguiente comando no evita esto.
+
+git revert --no-commit HEAD
+git revert --no-commit HEAD~i
+Vuelve en el tiempo es una forma de decir... ya que revierte todo un proceso, de add -> commit, como si no hubiera pasado. Luego aplicasmos lo siguiente
+
+git revert --continuo
+Ejecuta todas las ordenes anteriores como una sola.
+
+
+COMANDO PARA TRABAJAR CON RAMAS LOL
+
+
+git branch 
+muestra lista de ramas creadas. Para saber en que ramas estas parado, a tal rama se la distingue con color en pantalla (linux esta verde).
+
+git branch nombreNuevaRama
+crea la nueva rama
+
+git checkout nombreRama
+Te unica en la rama pasada como parametro.
+
+git checkout -b nombreRama
+Te crea una nueva rama y te ubica en la misma.
+
+git branch -m nombreViejo nombreNuevo
+Cambia el nombre de la rama.
+
+git branch -d nombreRama
+Elimina la rama.
+
+COMANDOS PARA TRABAJAR CON REPOSITORIOS REMOTOS	
+
+git remote
+Agrega repositorios remotos... creo que git funciones en redes sin necesidad de internet y se pueden comunicar repositorios.
+
+git 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
